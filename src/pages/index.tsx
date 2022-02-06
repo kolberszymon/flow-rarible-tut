@@ -25,7 +25,7 @@ export default function Home() {
 
   const prepareMint = async () => {
     //Contract Address is de facto Union Address
-    //e.g TEZOS:KT18vSGouhJcJZDDgrbBKkdCBjSXJWSbui3i
+    //e.g FLOW:A.ebf4ae01d1284af8.RaribleNFT
 
     let collection;
 
