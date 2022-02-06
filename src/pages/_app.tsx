@@ -11,7 +11,7 @@ import { connector } from "../context/connectors-setup";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <SdkWalletConnector connector={connector} desiredWallets={["beacon"]}>
+    <SdkWalletConnector connector={connector} desiredWallets={["fcl"]}>
       {(sdk, wallet, connection) => {
         return (
           <SDKContext.Provider value={{ sdk, wallet, connection }}>

@@ -13,12 +13,14 @@ export default function Home() {
     useState<Maybe<boolean>>(null);
   const [isLazyAllowed, setIsLazyAllowed] = useState<Maybe<boolean>>(null);
   const [uri, setUri] = useState<string>(
-    "ipfs://QmWLsBu6nS4ovaHbGAXprD1qEssJu4r5taQfB74sCG51tp"
+    "ipfs://ipfs/QmWLsBu6nS4ovaHbGAXprD1qEssJu4r5taQfB74sCG51tp"
   );
+
   const [supply, setSupply] = useState<string>("1");
   const [lazy, setLazy] = useState<boolean>(true);
+
   const [collectionId, setCollectionId] = useState(
-    "TEZOS:KT18vSGouhJcJZDDgrbBKkdCBjSXJWSbui3i"
+    "FLOW:A.ebf4ae01d1284af8.RaribleNFT"
   );
 
   const prepareMint = async () => {
@@ -61,7 +63,7 @@ export default function Home() {
     <div className="container font-mono flex items-center p-4 mx-auto min-h-screen justify-center">
       <main className="w-2/3 border-2 border-gray-400 p-2">
         <h1 className=" text-xl code">
-          Rarible Union SDK <span className="text-blue-600">Tezos</span> minting{" "}
+          Rarible Union SDK <span className="text-blue-600">Flow</span> minting{" "}
         </h1>
         <br />
         <br />
